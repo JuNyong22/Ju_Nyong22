@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <header>header</header>
+  <div id="container">
+    <nav><ul>
+      <li>home</li>
+      <li>news</li>
+      <li>sports</li>
+    </ul></nav>
+    <aside><ul>
+      <li>·Î±×¾Æ¿ô</li>
+      <li>¿À´ÃÀÇ ³¯¾¾</li>
+      <li>¿î¼¼</li>
+    </ul></aside>
+  </div>
+  <footer>footer</footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
+  </div>
+</body>
+</html>
+
+*CSS
+.wrap {
+  position:relative;
+  transform:translate3d(40px, 0, 0);
+}
+
+.box {
+  width:100px;
+  height:100px;
+  background-color:slategray;
+  color:#fff;
+  text-align:center;
+  line-height:100px;
+  position:absolute;
+}
+
+.box:nth-child(2) {
+  transform:translate3d(100px, 0, 0);
+}
+
+.box:nth-child(3) {
+  transform:translate3d(200px, 0, 0);
+}
