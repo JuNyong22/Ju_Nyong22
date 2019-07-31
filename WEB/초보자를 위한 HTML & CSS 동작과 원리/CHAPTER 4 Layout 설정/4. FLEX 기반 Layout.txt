@@ -1,0 +1,55 @@
+*HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="wrap">
+    <div>first</div>
+    <div>second</div>
+    <div>third</div>
+  <footer></footer>
+  </div>
+  
+</body>
+</html>
+
+*CSS
+/*.wrap {
+  background-color:slategray;
+  height:500px;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.wrap > div {
+  width:200px;
+  height:200px;
+  padding:0.5rem;
+  background-color:skyblue;
+  color;white;
+}*/
+
+.wrap {
+  background-color:slategray;
+  height:500px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.wrap > div {
+  flex-grow:1;
+  margin:0.2rem;
+   height:200px;
+  background-color:skyblue;
+}
+
+.wrap > div:nth-child(2) {
+  flex-grow:2;
+}

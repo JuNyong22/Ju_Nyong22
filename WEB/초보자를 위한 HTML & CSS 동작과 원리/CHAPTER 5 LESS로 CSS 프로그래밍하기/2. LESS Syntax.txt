@@ -1,0 +1,85 @@
+*HTML
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="wrap">
+    <h3>Hello world</h3>
+    <div class="content">
+      <ul>
+        <li><a href="">한국일보</a></li>
+        <li><a href="">조선일보</a></li>
+        <li><a href="">매일경제</a></li>
+        <li><a href="">스포츠조선</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    <ul>
+      <li><a href="">새로운뉴스</a></li>
+      <li><a href="">이전뉴스</a></li>
+      <li><a href="">인기뉴스</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
+
+*LESS
+@base_width:300px;
+@base_height:200px;
+@gray_border:1px solid gray;
+@text-base-color:gray;
+
+.wrap {
+  width:@base_width;
+  height:@base_height;
+  border:@gray_border;
+  padding:1rem;
+}
+
+.wrap h3 { /* wrap > h3의 >생략 가능*/
+  text-align:center;
+  color:@text-base-color;
+}
+
+.content {
+  width:200px;
+  height:@base_height/2;
+  border:@gray_border;
+  margin:0px auto;
+  li{
+    list-style:none;
+      a {
+        list-style:none;
+        color:@text-base-color;
+      }
+  }
+}
+
+.content li{
+  list-style:none;
+}
+
+.content li a {
+  list-style:none;
+  color:@text-base-color;
+}
+
+footer li {
+  color:red;
+}
+
+footer ul {
+  .content;
+  margin-top:12px;
+}
+
+.wrap > h3 {
+  text-align:center;
+  color:@text-base-color;
+}
